@@ -1,6 +1,6 @@
-# Write a Brief Descriptive Title Here
+# Write a Brief Descriptive Title Here Trivia on top Movies
 
-Authors:  **Name 1** and **Name 2**
+Authors:  **IAN UNSON** and **Ilona Platonova**
 
 ---
 
