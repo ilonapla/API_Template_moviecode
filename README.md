@@ -13,7 +13,7 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
-- This Python script is using IMDb movie all time Top 250 movies as rated by regular IMDb voters.
+- This Python script is using [IMDb movie](https://www.imdb.com/) all time Top 250 movies as rated by regular IMDb voters.
 - It creates a trivia game where a single Player is provided with a name of the movie and four alternative actors, one of whom is playing a role in the movie. Player has to choose one of for letters (A, B, C, D) to choose the answer. If it is correct, game is over. If he gets it wrong, he can try again to guess who is the right actor.
 - Information used for the trivia: movie names, lead actor IDs and names are retrieved from the IMDb server during the game, so internet connection has to be available.
 - Source of the data is updated daily, however the ratings of top 250 do not change significantly from day to day 
@@ -39,9 +39,33 @@ ia = imdb.Cinemagoer()
 
 ```
 
-- *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here.*
+- *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here. FIXME - do we explain explicitely as I did or should we have more details?*
 
-We then import data from [insert name of data source].  We print the data to allow us to verify what we've imported:
+We then import data from [IMDb api].  
+```
+top_m = ia.get_top250_movies()
+```
+We select one of the movies ID as the one to play and request from database the title of the movie and main character's name:
+```
+•FIXME• top_m = ia.get_top250_movies()
+```
+Then we generate random numbers and select other movies from the list that we take the characters' names from.
+Those movies and their cast are sources of our "wrong answers". 
+```
+•FIXME• top_m = ia.get_top250_movies()
+```
+Choices are being randomly assigned to variables.
+Output on the screen shows the Player four alternatives. He has to input one letter as his choice.
+Received keyboard action is compared with variables and check if the correct letter is provided.
+If answer is correct player gets response
+```
+•FIXME• top_m = ia.get_top250_movies()
+```
+If he is wrong, another trial is possible.
+
+
+*FIXME - this is professors code - left for example - should be removed until section "how to run code"*
+We print the data to allow us to verify what we've imported:
 ```
 x = [1, 3, 4, 7]
 y = [2, 5, 1, 6]
@@ -50,7 +74,7 @@ for i in range(0,len(x)):
 	print "x[%d] = %f" % (i, x[i])		
 ```
 - *NOTE 1:  This sample code doesn't actually import anything.  You'll need your code to grab live data from an online source.*  
-- *NOTE 2:  You will probably also need to clean/filter/re-structure the raw data.  Be sure to include that step.*
+
 
 Finally, we visualize the data.  We save our plot as a `.png` image:
 ```
@@ -75,8 +99,10 @@ The output from this code is shown below:
 	```
 	python trivia_game_imbd.py.py
 	```
+4. Game is started with generated information about the movie and the alternative actors which to guess.
+5. Player can enter information and when the answer is correct, the code stops.
 
-- *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
+- *NOTE: Please note that all the content of the data is owned by IMBd and API free access allows to run up to 100 requests per day. More requests per day are available for a subscription fee.*
 
 ---
 
