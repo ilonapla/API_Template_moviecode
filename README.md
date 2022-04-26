@@ -41,7 +41,7 @@ ia = imdb.Cinemagoer()
 
 - *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here. FIXME - do we explain explicitely as I did or should we have more details?*
 
-We then import data from [IMDb api].  
+We then import data from [IMDb api](https://imdb-api.com/).  
 ```
 top_m = ia.get_top250_movies()
 ```
