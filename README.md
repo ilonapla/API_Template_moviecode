@@ -31,7 +31,7 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 *In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
 
 The code, `trivia_game_imbd.py`, begins by downloading [here](https://cinemagoer.github.io/) and  installing Cinemagoer package, 
-then importing IMDb library:
+then importing IMDb library FIXME - missing more libraries - random? etc.:
 ```
 pip install cinemagoer
 import imdb
