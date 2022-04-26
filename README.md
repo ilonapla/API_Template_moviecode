@@ -31,11 +31,13 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 *In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
 
 The code, `trivia_game_imbd.py`, begins by downloading [here](https://cinemagoer.github.io/) and  installing Cinemagoer package, 
-then importing IMDb library FIXME - missing more libraries - random? etc.:
+then importing IMDb library, randint and numpy libraries for calculations:
 ```
 pip install cinemagoer
 import imdb
 ia = imdb.Cinemagoer()
+from random import randint
+import numpy as np
 
 ```
 
@@ -45,21 +47,46 @@ We then import data from [IMDb api](https://imdb-api.com/).
 ```
 top_m = ia.get_top250_movies()
 ```
-We select one of the movies ID as the one to play and request from database the title of the movie and main character's name:
+We select one of the movies ID as the one to play and request from database the title of the movie and main character's name, assigns the correct answer to valuable correctA:
 ```
-•FIXME• top_m = ia.get_top250_movies()
+current_ID = top_m[np.random.randint(0,len(top_m))].movieID
+movie = ia.get_movie(current_ID)
+actor = movie['cast'][np.random.randint(0,len(movie['cast']))]
+correctA = actor['name']
 ```
 Then we generate random numbers and select other movies from the list that we take the characters' names from.
 Those movies and their cast are sources of our "wrong answers". 
 ```
-•FIXME• top_m = ia.get_top250_movies()
+from random import randint
+othervalues = [randint(0, 249), randint(0, 249), randint(0, 249)]
+othermovie1=top_m[othervalues[0]].movieID
+....
+otheractor1=ia.get_movie(othermovie1)['cast'][1]
+......
+otheractor1 = otheractor1['name']
 ```
 Choices are being randomly assigned to variables.
 Output on the screen shows the Player four alternatives. He has to input one letter as his choice.
+```
+print("In the movie: \"" + movie['title'] + "\" the role of \"" + actor.currentRole['name'] + "\" is played by \"" + "____________" + "\".")
+
+answers = [correctA,otheractor1,otheractor2,otheractor3]
+mix = list(answers)
+ABCD = ['A','B','C','D']
+np.random.shuffle(mix)
+for i in range(4):
+    print(ABCD[i] + ") " + mix[i])
+```
+
 Received keyboard action is compared with variables and check if the correct letter is provided.
 If answer is correct player gets response
 ```
-•FIXME• top_m = ia.get_top250_movies()
+input1 = input()
+ABCD.index(input1)
+if mix[ABCD.index(input1)] == correctA:
+    print("Correct!! You did it!!")
+else:
+    print("Oh no. Try Again.")
 ```
 If he is wrong, another trial is possible.
 
