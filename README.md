@@ -13,24 +13,25 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
-- This Python script is using IMDb movie all time Top 250 movies as rated by regular IMDb voters. 
-- Information used for the trivia: movie names, lead actor IDs and names.
-- Source of the data is " 
+- This Python script is using IMDb movie all time Top 250 movies as rated by regular IMDb voters.
+- It creates a trivia game where a single Player is provided with a name of the movie and four alternative actors, one of whom is playing a role in the movie. Player has to choose one of for letters (A, B, C, D) to choose the answer. If it is correct, game is over. If he gets it wrong, he can try again to guess who is the right actor.
+- Information used for the trivia: movie names, lead actor IDs and names are retrieved from the IMDb server during the game, so internet connection has to be available.
+- Source of the data is updated daily, however the ratings of top 250 do not change significantly from day to day 
 
 ---
 
 ## Sources
 *In this section, provide links to your references.  For example:*
-- The source code came from [the magic source code farm](http://www.amagicalnonexistentplace.com)
-- The code retrieves data from [the organization for hosting cool data](http://www.anothermagicalnonexistentplace.com)
-- The code is based on [Python package Cinemagoer](https://cinemagoer.github.io/)
+- The code retrieves data from [IMDb website](https://developer.imdb.com/) via [IMDb API](https://imdb-api.com/)
+- The code is based on a Python package [Cinemagoer](https://cinemagoer.github.io/)
 
 ---
 
 ## Explanation of the Code
 *In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
 
-The code, `needs_a_good_name.py`, begins by installing necessary Python package, then import IMDb package:
+The code, `trivia_game_imbd.py`, begins by downloading [here](https://cinemagoer.github.io/) and  installing Cinemagoer package, 
+then importing IMDb library:
 ```
 pip install cinemagoer
 import imdb
@@ -68,11 +69,11 @@ The output from this code is shown below:
 *Provide step-by-step instructions for running the code.  For example, I like to run code from the terminal:*
 1. Open a terminal window.
 
-2. Change directories to where `needs_a_good_name.py` is saved.
+2. Change directories to where `trivia_game_imbd.py` is saved.
 
 3. Type the following command:
 	```
-	python needs_a_good_name.py
+	python trivia_game_imbd.py.py
 	```
 
 - *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
