@@ -1,6 +1,6 @@
-# Write a Brief Descriptive Title Here Trivia on top Movies
+# Trivia Game based on IMDb Movies
 
-Authors:  **IAN UNSON** and **Ilona Platonova**
+Authors:  **Ian Unson** and **Ilona Platonova**
 
 ---
 
@@ -13,6 +13,9 @@ Authors:  **IAN UNSON** and **Ilona Platonova**
 - *Describe the type of data that you're importing.* 
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
+- This Python script is using IMDb movie all time Top 250 movies as rated by regular IMDb voters. 
+- Information used for the trivia: movie names, lead actor IDs and names.
+- Source of the data is " 
 
 ---
 
@@ -20,6 +23,7 @@ Authors:  **IAN UNSON** and **Ilona Platonova**
 *In this section, provide links to your references.  For example:*
 - The source code came from [the magic source code farm](http://www.amagicalnonexistentplace.com)
 - The code retrieves data from [the organization for hosting cool data](http://www.anothermagicalnonexistentplace.com)
+- The code is based on Python package Cinemagoer obtained from https://cinemagoer.github.io/
 
 ---
 
