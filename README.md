@@ -65,6 +65,7 @@ If he is wrong, another trial is possible.
 
 
 *FIXME - this is professors code - left for example - should be removed until section "how to run code"*
+
 We print the data to allow us to verify what we've imported:
 ```
 x = [1, 3, 4, 7]
@@ -108,4 +109,6 @@ The output from this code is shown below:
 
 ## Suggestions
 *Finally, you should suggest any additional features that would be useful/interesting.  For example, what else could you do with these data?  How might you want to modify the plot to be more descriptive?  What summary statistics might you want to calculate with these data?*
-This sorce code and package can be used for creation of new trivia games. You can use other data like year of movie or change the sequence of what is given and what player has to guess in similar way. For example, you can swicth the game about actors - give an actor and provide with 4 movies which he might be playing at. Or a with a bit more of changes you can give year of first on the screen and then let choose the right one.
+•This sorce code and package can be used for creation of new trivia games. 
+•You can use other data like year of movie or change the sequence of what is given and what player has to guess in similar way. For example, you can swicth the game about actors - give an actor and provide with 4 movies which he might be playing at. 
+•With more coding you can use year of first on the screen and then let choose the right one.
