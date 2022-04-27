@@ -33,7 +33,7 @@ from random import randint
 import numpy as np
 ```
 
-FIXME -- We then import data from [IMDb api](https://imdb-api.com/).  as rated by regular IMDb voters
+We request top 250 movies from [IMDb api](https://imdb-api.com/) as rated by regular IMDb voters
 ```
 top_m = ia.get_top250_movies()
 ```
