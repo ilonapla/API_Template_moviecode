@@ -19,17 +19,18 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 ---
 
 ## Explanation of the Code
-*In this section you should provide a more detailed explanation of what, exactly, the above code actually does.  Your classmates should be able to read your explanation and understand what is happening in the code.*
-
-The code, `trivia_game_imbd.py`, begins by downloading [here](https://cinemagoer.github.io/) and  installing Cinemagoer package, 
-then importing IMDb library, randint and numpy libraries for calculations:
+If you do not have numpy or Cinemagoer installed, then you can use pip install in the terminal to download those. More details on downloading and installing Cinemagoer can be found [here](https://cinemagoer.github.io/).
 ```
 pip install cinemagoer
+pip install numpy
+```
+
+The code, `trivia_game_imbd.py`, begins by importing the IMDb library, randint and numpy libraries for calculations:
+```
 import imdb
 ia = imdb.Cinemagoer()
 from random import randint
 import numpy as np
-
 ```
 
 - *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here. FIXME - do we explain explicitely as I did or should we have more details?*
