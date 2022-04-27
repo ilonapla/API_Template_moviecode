@@ -37,17 +37,15 @@ FIXME -- We then import data from [IMDb api](https://imdb-api.com/).  as rated b
 ```
 top_m = ia.get_top250_movies()
 ```
-We select one of the movies ID as the one to play and request from database the title of the movie and main character's name, assigns the correct answer to valuable correctA:
+We select one of the movie IDs (from the top 250 movies) as the one to request the information from the database. We use the title of the movie, a main character's name and the actor who played that character to populate the question and correct answer. This correct answer is stored as variable correctA:
 ```
 current_ID = top_m[np.random.randint(0,len(top_m))].movieID
 movie = ia.get_movie(current_ID)
 actor = movie['cast'][np.random.randint(0,len(movie['cast']))]
 correctA = actor['name']
 ```
-Then we generate random numbers and select other movies from the list that we take the characters' names from.
-Those movies and their cast are sources of our "wrong answers". 
+Using random numbers, we select other movies from the Top 250 list and randomly select other actors from those movies to populate our "wrong answers". 
 ```
-from random import randint
 othervalues = [randint(0, 249), randint(0, 249), randint(0, 249)]
 othermovie1=top_m[othervalues[0]].movieID
 ....
