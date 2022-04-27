@@ -103,3 +103,6 @@ Regardless of a right or wrong answer, the player is also given the option to pl
 - This sorce code and package can be used for creation of new trivia games. 
 - You can use other data like year of movie or change the sequence of what is given and what player has to guess in similar way. For example, you can swicth the game about actors - give an actor and provide with 4 movies which he might be playing at. 
 - With more coding you can use year of first on the screen and then let choose the right one.
+- Using other python packages we could make a UI where you can click the answer you think is correct
+- Integrating this code with a twitter API you could set up a twitter account to post a daily trivia question
+- Through social network analysis or possibly nearest neighbor algorithm to improve wrong answers to be closer to the correct answer
