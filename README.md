@@ -80,31 +80,6 @@ else:
 ```
 If he is wrong, another trial is possible.
 
-
-*FIXME - this is professors code - left for example - should be removed until section "how to run code"*
-
-We print the data to allow us to verify what we've imported:
-```
-x = [1, 3, 4, 7]
-y = [2, 5, 1, 6]
-
-for i in range(0,len(x)):
-	print "x[%d] = %f" % (i, x[i])		
-```
-- *NOTE 1:  This sample code doesn't actually import anything.  You'll need your code to grab live data from an online source.*  
-
-
-Finally, we visualize the data.  We save our plot as a `.png` image:
-```
-plt.plot(x, y)
-plt.savefig('samplefigure.png')	
-plt.show()
-```
-
-The output from this code is shown below:
-
-![Image of Plot](images/samplefigure.png)
-
 ---
 
 ## How to Run the Code
