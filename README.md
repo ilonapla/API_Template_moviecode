@@ -25,15 +25,13 @@ pip install cinemagoer
 pip install numpy
 ```
 
-The code, `trivia_game_imbd.py`, begins by importing the IMDb library, randint and numpy libraries for calculations:
+The code, `trivia_game_imbd.py`, begins by importing the IMDb library to get the movie data, randint and numpy libraries are used for calculations:
 ```
 import imdb
 ia = imdb.Cinemagoer()
 from random import randint
 import numpy as np
 ```
-
-- *NOTE:  If a package does not come pre-installed with Anaconda, you'll need to provide instructions for installing that package here. FIXME - do we explain explicitely as I did or should we have more details?*
 
 We then import data from [IMDb api](https://imdb-api.com/).  
 ```
