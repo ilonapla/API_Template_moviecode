@@ -53,8 +53,8 @@ otheractor1=ia.get_movie(othermovie1)['cast'][1]
 ......
 otheractor1 = otheractor1['name']
 ```
-Choices are being randomly assigned to variables.
-Output on the screen shows the Player four alternatives. He has to input one letter as his choice.
+The one correct answer and the three incorrect answers are randomly shuffled and assigned as option A, B, C or D.
+The output on the screen shows the Player four choices and request an input of the letter they believe corresponds with the correct answer.
 ```
 print("In the movie: \"" + movie['title'] + "\" the role of \"" + actor.currentRole['name'] + "\" is played by \"" + "____________" + "\".")
 
@@ -66,8 +66,8 @@ for i in range(4):
     print(ABCD[i] + ") " + mix[i])
 ```
 
-Received keyboard action is compared with variables and check if the correct letter is provided.
-If answer is correct player gets response
+Received input is compared with variables and the game will check if the correct letter is selected.
+If answer is correct player gets response: "Correct!! You did it!!"
 ```
 input1 = input()
 ABCD.index(input1)
@@ -76,7 +76,9 @@ if mix[ABCD.index(input1)] == correctA:
 else:
     print("Oh no. Try Again.")
 ```
-If he is wrong, another trial is possible.
+If they are wrong, another trial is possible as they are ask: "Oh no. Would you like to try again? (Type Y for yes)"
+
+Regardless of a right or wrong answer, the player is also given the option to play the game again with a new question: "Would you like to play again with a new question? (Type Y for yes)"
 
 ---
 
@@ -88,10 +90,10 @@ If he is wrong, another trial is possible.
 
 3. Type the following command:
 	```
-	python trivia_game_imbd.py.py
+	python trivia_game_imbd.py
 	```
 4. Game is started with generated information about the movie and the alternative actors which to guess.
-5. Player can enter information and when the answer is correct, the code stops.
+5. Player can enter their guess and can choose to repeat a question if they get it wrong and can choose to continue playing with a new question regardless if they right or wrong.
 
 - *NOTE: Please note that all the content of the data is owned by IMBd and API free access allows to run up to 100 requests per day. More requests per day are available for a subscription fee.*
 
