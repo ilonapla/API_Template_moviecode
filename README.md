@@ -1,4 +1,4 @@
-# Trivia Game based on IMDb Movies
+# Trivia Game Based on IMDb Movies
 
 Authors:  **Ian Unson** and **Ilona Platonova**
 
