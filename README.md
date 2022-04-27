@@ -4,10 +4,6 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 
 ---
 
-**NOTE**:  The *italicized* content below is for your reference only.  Please remove these comments before submitting.
-
----
-
 ## Introduction
 *The purpose of this section is to provide some information about the data you're exploring.  For example, you should*
 - *Describe the type of data that you're importing.* 
