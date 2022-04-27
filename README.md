@@ -100,6 +100,6 @@ Regardless of a right or wrong answer, the player is also given the option to pl
 ---
 
 ## Suggestions
-•This sorce code and package can be used for creation of new trivia games. 
-•You can use other data like year of movie or change the sequence of what is given and what player has to guess in similar way. For example, you can swicth the game about actors - give an actor and provide with 4 movies which he might be playing at. 
-•With more coding you can use year of first on the screen and then let choose the right one.
+-This sorce code and package can be used for creation of new trivia games. 
+-You can use other data like year of movie or change the sequence of what is given and what player has to guess in similar way. For example, you can swicth the game about actors - give an actor and provide with 4 movies which he might be playing at. 
+-With more coding you can use year of first on the screen and then let choose the right one.
