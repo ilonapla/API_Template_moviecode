@@ -13,7 +13,6 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 ---
 
 ## Sources
-*In this section, provide links to your references.  For example:*
 - The code retrieves data from [IMDb website](https://developer.imdb.com/) via [IMDb API](https://imdb-api.com/)
 - The code is based on a Python package [Cinemagoer](https://cinemagoer.github.io/)
 
