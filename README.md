@@ -4,7 +4,7 @@ Authors:  **Ian Unson** and **Ilona Platonova**
 
 ---
 
-## Introduction
+## Introduction ([click here for a video run through of this page](https://youtu.be/j94YJ9B_0W0))
 - This Python script is using [IMDb movie](https://www.imdb.com/) all time Top 250 movies as rated by regular IMDb voters.
 - It creates a trivia game where a single Player is provided with a name of the movie and four alternative actors, one of whom is playing a role in the movie. Player has to choose one of for letters (A, B, C, D) to choose the answer. If it is correct, game is over. If he gets it wrong, he can try again to guess who is the right actor.
 - Information used for the trivia: movie names, lead actor IDs and names are retrieved from the IMDb server during the game, so internet connection has to be available.
